@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <title>Chat</title>
+        <style>
+            .hidden {
+                display: none;
+            }
+        </style>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.7.2/socket.io.min.js"></script>
+        <script>
+            const socket = io("http://localhost:4321")
+            socket.connect()
+        </script>
+    </head>
+    <body>
+        <h1>Chat app</h1>
+        <form action="">
+            User: <input type="text" name="user" id="user">
+            Password: <input type="password" name="password" id="password">
+            <input type="submit" value="Login">
+        </form>
+        <div id="error"></div>
+        <div id="chat" class="hidden">
+            <div id="messages"></div>
+            <textarea name="message" id="message"></textarea>
+            <br>
+            <button id="sendBtn">Send</button>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>

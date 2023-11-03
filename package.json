@@ -1,0 +1,14 @@
+{
+  "dependencies": {
+    "express": "^4.18.2",
+    "socket.io": "^4.7.2"
+  },
+  "scripts": {
+    "dev": "yarn run nodemon main.js",
+    "dev-io": "yarn run nodemon io.js"
+  },
+  "type": "module",
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  }
+}
